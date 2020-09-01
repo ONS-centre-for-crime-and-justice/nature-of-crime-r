@@ -1,0 +1,37 @@
+# In this YAML file, you can configure things that affect:
+#         The whole table (only one part)
+
+TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["All domestic burglary in a dwelling", [51,52,53]]
+        - ["Domestic burglary in a dwelling with entry", [51,52]]
+        - ["Attempted domestic burglary in a dwelling", [53]]
+    TITLE_OF_TABLE: "Table 2: Point of entry in incidents of domestic burglary in a dwelling"
+    TITLES_OF_SUBTABLES: 
+        - "Table 2a: Point of entry in incidents of all domestic burglary in a dwelling"
+        - "Table 2b: Point of entry in incidents of domestic burglary in a dwelling with entry"
+        - "Table 2c: Point of entry in incidents of attempted domestic burglary in a dwelling"
+    SUBTITLES:
+        - "England and Wales"
+        - "Household incidents, percentages"
+    FOOTNOTES:
+        - "Respondents were asked if the burglar got in/tried to get in at the front of your house/flat (or garage), at the back or at the side."
+        -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+    ROW_LABELS:
+        - "Front"
+        - "Back"
+        - "Side"
+        - "More than one way$$Note_1$$"
+        - "Unweighted base - number of incidents"

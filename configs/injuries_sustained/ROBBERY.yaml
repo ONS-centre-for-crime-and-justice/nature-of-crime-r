@@ -1,0 +1,72 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Three parts of the table;
+#         (b) just Part 1 of the Table - "Respondent was injured and what type of injury"; and
+#         (c) just Part 2 of the Table - "Respondent received medical attention"; and
+#         (d) just Part 3 of the Table - "Respodent stayed in hospital due to their injuries"
+
+ALL_PARTS_OF_THE_TABLE:
+    WEIGHT_VARIABLES:
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["Robbery", [41, 42]]
+    TITLE_OF_TABLE: "Table 3: Injuries sustained in incidents of robbery"
+    TITLES_OF_SUBTABLES: "Table 3: Injuries sustained in incidents of robbery$$Note_1$$$$Note_2$$"
+    SUBTITLES:
+        - "England and Wales"
+        - "Personal incidents, percentages"
+    FOOTNOTES:
+        - "Due to questionnaire changes, figures prior to year ending March 2013 are not comparable and have therefore not been presented."
+        - "Includes attempted robbery."
+        - "Figures may not sum to the percentage of those who sustained an injury as more than one type of physical injury may have been sustained."
+        - "Other form of medical attention includes medical attention from a trained first aider or a dentist."
+        - "This question asks whether the victim stayed in hospital for at least one night and is asked of those who sought medical attention (excluding dentists)."
+        - master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_ONE:
+    NAME: "Type of injury$$Note_3$$"
+    VARIABLES_AND_THEIR_ROW_LABELS:
+        - [respinj,"Sustained physical injury"]
+        - [minbruis,"Minor bruise/black eye"]
+        - [scratch,"Scratches"]
+        - [cuts,"Cuts"]
+        - [sevbruis,"Severe bruising"]
+        - [concuss,"Concussion or loss of consciousness"]
+        - [bones,"Broken bones"]
+        - [Nbleed,"Nose bleed"]
+        - [nose,"Broken nose"]
+        - [dislo,"Dislocation"]
+        - [internal,"Internal injuries"]
+        - [stab,"Puncture or stab wounds"]
+        - [chipped,"Chipped teeth"]
+        - [brteeth,"Broken or lost teeth"]
+        - [facial,"Facial or head injuries (no bruising)"]
+        - [eyeacid,"Eye/face injuries due to acid/ paint etc. thrown into face"]
+        - [otherinj,"Other"]
+        - [noinj,"No physical injury"]
+        - [NULL,"Unweighted base - number of incidents"]
+PART_TWO:
+    ROW_VARIABLES:
+        - [firstaid]
+        - [para]
+        - [nurse]
+        - [doct]
+        - [dent]
+        - [att]
+        - [nomeds]
+    VARIABLES_AND_THEIR_ROW_LABELS:
+        - [para,"Medical attention from a paramedic"]
+        - [nurse,"Medical attention from a nurse"]
+        - [doct,"Medical attention from a doctor"]
+        - [Some_form,"Some form of medical attention"]
+        - [othmed,"Other form of medical attention$$Note_4$$"]
+        - [Unweighted_base,"Unweighted base - number of incidents"]
+PART_THREE:
+    VARIABLES_AND_THEIR_ROW_LABELS:
+       - [hosp2,"Hospital stay$$Note_5$$"]
+       - [Unweighted_base,"Unweighted base - number of incidents"]

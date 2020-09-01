@@ -1,0 +1,62 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Three parts of the table;
+#         (b) just Part 1 of the Table - "Rated seriousness of incidents"; and
+#         (c) just Part 2 of the Table - "Whether incident perceived as a crime"
+
+BOTH_PARTS_OF_THE_TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["All violence", [11,12,13,21,32,33]]
+        - ["Violence with injury", [11,12,13,21,32,33]]
+        - ["Wounding", [11,12,13,21,32,33]]
+        - ["Assault with minor injury", [11,12,13,21,32,33]]
+        - ["Violence without injury", [11,12,13,21,32,33]]
+        - ["Domestic violence", [11,12,13,21,32,33]]
+        - ["Violence by an acquaintance", [11,12,13,21,32,33]]
+        - ["Violence by a stranger", [11,12,13,21,32,33]]
+    TITLE_OF_TABLE: "Table 7: Perceived seriousness of violent incidents"
+    TITLES_OF_SUBTABLES:
+        - "Table 7a: Perceived seriousness of all violent incidents$$Note_1$$"
+        - "Table 7b: Perceived seriousness of incidents of violence with injury$$Note_2$$"
+        - "Table 7c: Perceived seriousness of incidents of wounding"
+        - "Table 7d: Perceived seriousness of incidents of assault with minor injury"
+        - "Table 7e: Perceived seriousness of incidents of violence without injury"
+        - "Table 7f: Perceived seriousness of incidents of domestic violence$$Note_3$$"
+        - "Table 7g: Perceived seriousness of incidents of acquaintance violence$$Note_4$$"
+        - "Table 7h: Perceived seriousness of incidents of stranger violence$$Note_5$$"
+    SUBTITLES:
+        - "England and Wales"
+        - "Personal incidents, percentages"
+    FOOTNOTES:
+        - "'All violence' includes violence with injury and violence without injury. See Section 5.1 of the User Guide for more information."
+        - "'Violence with injury' includes wounding and assault with minor injury."
+        - "Domestic violence comprises violence that involves partners, ex-partners, other relatives or household members. See Section 5.1 of the User Guide for more information."
+        - "Acquaintance violence comprises violence in which the victim knew one or more of the offenders, at least by sight but it excludes domestic violence. See Section 5.1 of the User Guide for more information."
+        - "Stranger violence comprises violence in which the victim did not have any information about the offender(s) or did not know and had never seen the offender(s) before. See Section 5.1 of the User Guide for more information."
+        - "1-6 represents the least serious assessment and 14-20 represents the most serious."
+        -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_ONE:
+    NAME: "Rated seriousness of crime$$Note_6$$"
+    ROW_LABELS:
+        - "1-6"
+        - "7-13"
+        - "14-20"
+        - "Mean rating"
+        - "Unweighted base - number of incidents"
+PART_TWO:
+    ROW_LABELS:
+        - "It was a crime"
+        - "It was wrong, but not a crime"
+        - "It was just something that happens"
+        - "Unweighted base - number of incidents"

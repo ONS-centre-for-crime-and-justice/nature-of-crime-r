@@ -1,0 +1,62 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Both parts of the table;
+#         (b) just Part 1 of the table - "Offender under influence of alcohol"; and
+#         (c) just Part 2 of the Table - "Offender under influence of drugs".
+
+BOTH_PARTS_OF_THE_TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["All violence", [11,12,13,21,32,33]]
+        - ["Violence with injury", [11,12,13,21,32,33]]
+        - ["Wounding", [11,12,13,21,32,33]]
+        - ["Assault with minor injury", [11,12,13,21,32,33]]
+        - ["Violence without injury", [11,12,13,21,32,33]]
+        - ["Domestic violence", [11,12,13,21,32,33]]
+        - ["Violence by an acquaintance", [11,12,13,21,32,33]]
+        - ["Violence by a stranger", [11,12,13,21,32,33]]
+    TITLE_OF_TABLE: "Table 10: Proportion of violent incidents where the victim believed the offender(s) to be under the influence of alcohol or drugs"
+    TITLES_OF_SUBTABLES: 
+        - "Table 10a: Proportion of violent incidents where the victim believed the offender(s) to be under the influence of alcohol or drugs$$Note_1$$"
+        - "Table 10b: Proportion of incidents of violence with injury where the victim believed the offender(s) to be under the influence of alcohol or drugs$$Note_2$$"
+        - "Table 10c: Proportion of incidents of wounding where the victim believed the offender(s) to be under the influence of alcohol or drugs"
+        - "Table 10d: Proportion of incidents of assault with minor injury where the victim believed the offender(s) to be under the influence of alcohol or drugs"
+        - "Table 10e: Proportion of incidents of violence without injury where the victim believed the offender(s) to be under the influence of alcohol or drugs"
+        - "Table 10f: Proportion of incidents of domestic violence where the victim believed the offender(s) to be under the influence of alcohol or drugs$$Note_3$$"
+        - "Table 10g: Proportion of incidents of acquaintance violence where the victim believed the offender(s) to be under the influence of alcohol or drugs$$Note_4$$"
+        - "Table 10h: Proportion of incidents of stranger violence where the victim believed the offender(s) to be under the influence of alcohol or drugs$$Note_5$$"
+    SUBTITLES:
+        - "England and Wales"
+        - "Personal incidents, percentages"
+    FOOTNOTES:
+        - "'All violence' includes violence with injury and violence without injury. See Section 5.1 of the User Guide for more information."
+        - "'Violence with injury' includes wounding and assault with minor injury."
+        - "Domestic violence comprises violence that involves partners, ex-partners, other relatives or household members. See Section 5.1 of the User Guide for more information." 
+        - "Acquaintance violence comprises violence in which the victim knew one or more of the offenders, at least by sight but it excludes domestic violence. See Section 5.1 of the User Guide for more information."
+        - "Stranger violence comprises violence in which the victim did not have any information about the offender(s) or did not know and had never seen the offender(s) before. See Section 5.1 of the User Guide for more information."
+        - "Questions asked only if the victim was able to say something about the offender(s), and if there was more than one offender, victims were asked if any of the offenders were perceived to be under the influence. Questions were not asked if any offender(s) were perceived to be under the age of 10."
+        - master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_ONE:
+    NAME: "Offender(s) perceived to be under influence of alcohol$$Note_6$$"
+    ROW_LABELS:
+        - "Yes"
+        - "No"
+        - "Don't know"
+        - "Unweighted base - number of incidents"
+PART_TWO:
+    NAME: "Offender(s) perceived to be under influence of drugs$$Note_6$$"
+    ROW_LABELS:
+        - "Yes"
+        - "No"
+        - "Don't know"
+        - "Unweighted base - number of incidents"

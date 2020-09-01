@@ -1,0 +1,62 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Both parts of the table;
+#         (b) just Part 1 of the table - "Respondent was/was-not emotionally affected"; and
+#         (c) just Part 2 of the Table - "Type of emotional response experienced".
+
+BOTH_PARTS_OF_THE_TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["All other household theft", [55,56,65]]
+        - ["Theft from a dwelling", [55, 56]]
+        - ["Theft from outside a dwelling", [65]]
+    TITLE_OF_TABLE: "Table 2: Items stolen in incidents of other household theft"
+    TITLES_OF_SUBTABLES:
+        - "Table 2a: Items stolen in incidents of all other household theft"
+        - "Table 2b: Items stolen in incidents of theft from a dwelling"
+        - "Table 2c: Items stolen in incidents of theft from outside a dwelling"
+    SUBTITLES:
+        - "England and Wales"
+        - "Household incidents, percentages"
+    FOOTNOTES:
+        - "Figures may not sum to 100 as more than one response possible."
+        - "Separate categories for jewellery and watches were introduced in the year ending March 2015."
+        - "'Electrical goods/cameras' includes televisions, videos, stereos, cameras, MP3 players and DVD players."
+        -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_TWO:
+    NAME: "Items stolen$$Note_1$$"
+    ROW_LABELS:
+        - [whast_h1, "Purse/wallet/money/cards"]
+        - [whast_h2, "Mobile"]
+        - [whast_h3, "Jewellery/watches"]
+        - [whast_h4, "Clothes"]
+        - [whast_h5, "Documents"]
+        - [whast_h6, "Electrical good/cameras$$Note_3$$"]
+        - [whast_h7, "Computer/computer equipment"]
+        - [whast_h8, "CDs/tapes/videos/DVDs"]
+        - [whast_h9, "House keys"]
+        - [whast_h10, "Car keys"]
+        - [whast_h11, "Tools/work materials"]
+        - [whast_h12, "Bicycle/bicycle parts"]
+        - [whast_h13, "Garden furniture"]
+        - [whast_h14, "Wheelie bin/dustbin"]
+        - [whast_h15, "Children's toys/baby items"]
+        - [whast_h16, "Sports equipment"]
+        - [whast_h17, "Other stolen items"]
+        - [whast_h18, "Household items/furniture"]
+        - [whast_h19, "Food/toiletries/cigarettes"]
+        - [whast_h20, "Vehicle/vehicle parts"]
+        - [whast_h21, "Handbag/briefcase/shopping bag"]
+        - [whast_h22, "Jewellery$$Note_2$$"]
+        - [whast_h23, "Watches$$Note_2$$"]
+        - [NULL, "Unweighted base - number of incidents"]

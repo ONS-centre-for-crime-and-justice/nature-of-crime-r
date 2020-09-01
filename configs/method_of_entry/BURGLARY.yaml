@@ -1,0 +1,67 @@
+# In this YAML file, you can configure things that affect:
+#         (a) The whole table;
+
+TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["All domestic burglary in a dwelling", [51,52,53]]
+        - ["Domestic burglary in a dwelling with entry", [51,52]]
+        - ["Attempted domestic burglary in a dwelling", [53]]
+    TITLE_OF_TABLE: "Table 3: Method of entry in incidents of domestic burglary"
+    TITLES_OF_SUBTABLES:
+        - "Table 3a: Method of entry in incidents of all domestic burglary in a dwelling"
+        - "Table 3b: Method of entry in incidents of domestic burglary in a dwelling with entry"
+        - "Table 3c: Method of entry in incidents of attempted domestic burglary in a dwelling"
+    SUBTITLES:
+        - "England and Wales"
+        - "Household incidents, percentages$$Note_1$$"
+    FOOTNOTES:
+        - "Figures may not sum to 100 as more than one response possible."
+        - "Unweighted base is taken from the question asking if the offender got through the door. Other bases will be similar."
+        -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+    ROW_VARIABLES:
+        - [door]
+        - [doorpush2]
+        - [doorlock2]
+        - [doorkey2]
+        - [doorforc2]
+        - [doorcut2]
+        - [falseent]
+        - [doorglas2]
+        - [doorkick2]
+        - [dooroth2]
+        - [window]
+        - [winpush]
+        - [winlock]
+        - [wincut]
+        - [winoth]
+        - [otherent]
+    VARIABLES_AND_THEIR_ROW_LABELS:
+        - [door,"Door"]
+        - [doorpush2,"Pushed past person who opened the door"]
+        - [doorlock2,"Door was not locked"]
+        - [doorkey2,"They had a key"]
+        - [doorforc2,"Forced lock"]
+        - [doorcut2,"Broke/cut panel of door"]
+        - [falseent,"False pretences"]
+        - [doorglas2,"Broke/smashed glass of door"]
+        - [doorkick2,"Kicked, smashed or rammed door"]
+        - [dooroth2,"Other method"]
+        - [window,"Window"]
+        - [winpush,"Window open/could be pushed open"]
+        - [winlock,"Forced window lock/catch"]
+        - [wincut,"Broke/cut glass"]
+        - [winoth,"Other method "]
+        - [otherent,"Other"]
+        - [Unweighted_base,"Unweighted base - number of incidents$$Note_2$$"]

@@ -1,0 +1,79 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Both parts of the table;
+#         (b) just Part 1 of the table - "Time of the week"; and
+#         (c) just Part 2 of the Table - "Time of day".
+
+BOTH_PARTS_OF_THE_TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["All violence", [11,12,13,21,32,33]]
+        - ["Violence with injury", [11,12,13,21,32,33]]
+        - ["Wounding", [11,12,13,21,32,33]]
+        - ["Assault with minor injury", [11,12,13,21,32,33]]
+        - ["Violence without injury", [11,12,13,21,32,33]]
+        - ["Domestic violence", [11,12,13,21,32,33]]
+        - ["Violence by an acquaintance", [11,12,13,21,32,33]]
+        - ["Violence by a stranger", [11,12,13,21,32,33]]
+    TITLE_OF_TABLE: "Table 1: Timing of when incidents of violence occurred"
+    TITLES_OF_SUBTABLES:
+        - "Table 1a: Timing of when incidents of all violence$$Note_6$$ occurred"
+        - "Table 1b: Timing of when incidents of violence with injury$$Note_7$$ occurred"
+        - "Table 1c: Timing of when incidents of wounding occurred"
+        - "Table 1d: Timing of when incidents of assault with minor injury occurred"
+        - "Table 1e: Timing of when incidents of violence without injury occurred"
+        - "Table 1f: Timing of when incidents of domestic violence$$Note_8$$ occurred"
+        - "Table 1g: Timing of when incidents of violence by an acquaintance$$Note_9$$ occurred"
+        - "Table 1h: Timing of when incidents of violence by a stranger$$Note_10$$ occurred"
+    SUBTITLES:
+        - "England and Wales"
+        - "Personal incidents, percentages"
+    FOOTNOTES:
+        - "Weekend is from Friday 6pm to Monday 6am."
+        - "Morning is from 6am to noon; afternoon is from noon to 6pm."
+        - "Evening is from 6pm to midnight; night is midnight to 6am."
+        - "Early evening is from 6pm to 10pm."
+        - "Late evening is from 10pm to midnight."
+        - "'All violence' includes violence with injury and violence without injury. See Section 5.1 of the User Guide for more information."
+        - "'Violence with injury' includes wounding and assault with minor injury."
+        - "Domestic violence comprises violence that involves partners, ex-partners, other relatives or household members. See Section 5.1 of the User Guide for more information."
+        - "Acquaintance violence comprises violence in which the victim knew one or more of the offenders, at least by sight, but it excludes domestic violence. See Section 5.1 of the User Guide for more information."
+        - "Stranger violence comprises violence in which the victim did not have any information about the offender(s) or did not know and had never seen the offender(s) before. See Section 5.1 of the User Guide for more information."
+        -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_ONE:
+    NAME: "Time of the week"
+    ROW_LABELS:
+        - "During the week"
+        - "At the weekend$$Note_1$$"
+        - "Unweighted base - number of incidents"
+PART_TWO:
+    NAME: "Time of day"
+    ROW_LABELS:
+        - "Morning/Afternoon$$Note_2$$"
+        - "Morning"
+        - "Afternoon"
+        - "Morning/afternoon (unsure which)"
+        - "Evening/night$$Note_3$$"
+        - "Evening"
+        - "Early evening$$Note_4$$"
+        - "Late evening$$Note_5$$"
+        - "Night"
+        - "Evening/night (unsure which)"
+        - "Unweighted base - number of incidents"
+PART_THREE:
+    NAME: "Daylight or dark"
+    ROW_LABELS:
+        - "Daylight"
+        - "Dark"
+        - "Dawn/Dusk"
+        - "Unweighted base - number of incidents"

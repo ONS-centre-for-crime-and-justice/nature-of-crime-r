@@ -1,0 +1,82 @@
+# In this YAML file, you can configure things that affect every table.
+
+DATA_DIRECTORIES:
+    VF:  "./data/backseries/VF"
+    NVF: "./data/backseries/NVF"
+EXCEL_WORKBOOK_NAMES:
+    - [BICYCLE_THEFT, "Nature of Crime - Bicycle theft.xlsx"]
+    - [BURGLARY, "Nature of Crime - Burglary.xlsx"]
+    - [CRIMINAL_DAMAGE, "Nature of Crime - Criminal damage.xlsx"]
+    - [OTHER_HOUSEHOLD_THEFT, "Nature of Crime - Other household theft.xlsx"]
+    - [PERSONAL_AND_OTHER_THEFT, "Nature of Crime - Personal and other theft.xlsx"]
+    - [ROBBERY, "Nature of Crime - Robbery.xlsx"]
+    - [VEHICLE_RELATED_THEFT, "Nature of Crime - Vehicle-related theft.xlsx"]
+    - [VIOLENCE, "Nature of Crime - Violence.xlsx"]
+COVER_SHEET_TITLES:
+    - "Nature of crime: Bicycle theft"
+    - "Nature of crime: Burglary"
+    - "Nature of crime: Criminal damage"
+    - "Nature of crime: Other household theft"
+    - "Nature of crime: Personal and othet theft"
+    - "Nature of crime: Robbery"
+    - "Nature of crime: Vehicle-related theft"
+    - "Nature of crime: Violence"
+OFFENCE_CODES:
+    BICYCLE_THEFT:
+        BICYCLE_THEFT: [64]
+    BURGLARY:
+        ALL_DOMESTIC_BURGLARY_IN_A_DWELLING: [51,52,53]
+        ALL_DOMESTIC_BURGLARY_IN_A_NON_CONNECTED_BUILDING_TO_A_DWELLING: [50,57,58]
+        ATTEMPTED_DOMESTIC_BURGLARY_IN_A_DWELLING_WITH_ENTRY: [53]
+        ATTEMPTED_DOMESTIC_BURGLARY_IN_A_NON_CONNECTED_BUILDING_TO_A_DWELLING: [50]
+        DOMESTIC_BURGLARY_IN_A_DWELLING_WITH_ENTRY: [51,52]
+        DOMESTIC_BURGLARY_IN_A_NON_CONNECTED_BUILDING_TO_A_DWELLING_WITH_ENTRY: [57,58]
+    CRIMINAL_DAMAGE:
+        ALL_CRIMINAL_DAMAGE: [80,81,82,83,84,85,86]
+        ARSON_AND_OTHER_CRIMINAL_DAMAGE: [80,83,84,85,86]
+        CRIMINAL_DAMAGE_TO_A_VEHICLE: [82,82]
+    OTHER_HOUSEHOLD_THEFT:
+        ALL_OTHER_HOUSEHOLD_THEFT: [55,56,65]
+        THEFT_FROM_A_DWELLING: [55,56]
+        THEFT_FROM_OUTSIDE_A_DWELLING: [65]
+    PERSONAL_AND_OTHER_THEFT:
+        THEFT_FROM_THE_PERSON: [43,44,45]
+        OTHER_THEFT_OF_PROPERTY: [67,73]
+    ROBBERY:
+        ROBBERY: [41,42]
+    VEHICLE_RELATED_THEFT:
+        ALL_VEHICLE_RELATED_THEFT: [60,61,62,63,71,72]
+        ATTEMPTED_THEFT_OF_AND_FROM_VEHICLES: [71,72]
+        THEFT_FROM_VEHICLES: [61,63]
+        THEFT_OF_VEHICLES: [60,62]
+METADATA:
+    GEOGRAPHY:       "England and Wales"
+    HOUSEHOLD_UNITS: "Household incidents, percentages"
+    PERSONAL_UNITS:  "Personal incidents, percentages"
+    SCOPE:           "Year ending March 2010 to year ending March 2020"
+    SOURCE:          "Source: Office for National Statistics - Crime Survey for England and Wales"
+SIGNIFICANCE_TESTING:
+    COLUMN_LABELS:
+        1_YEAR_TEST:  "Latest year compared with March 19"
+        7_YEAR_TEST:  "Latest year compared with March 13" 
+        10_YEAR_TEST: "Latest year compared with March 10"
+    FOOTNOTE: "Statistically significant change at the 5% level is indicated by an asterisk. For more information on statistical significance, see Chapter 8 of the User Guide."
+UNWEIGHTED_BASES:
+    CAUTION_THRESHOLD: 50
+    FOOTNOTE_FOR_CAUTION: "Estimates based on fewer than 50 respondents should be interpreted with caution."
+YEARS:
+    YEAR_ONE:    2009
+    YEAR_TWO:    2010
+    YEAR_THREE:  2011
+    YEAR_FOUR:   2012
+    YEAR_FIVE:   2013
+    YEAR_SIX:    2014
+    YEAR_SEVEN:  2015
+    YEAR_EIGHT:  2016
+    YEAR_NINE:   2017
+    YEAR_TEN:    2018
+    YEAR_ELEVEN: 2019
+VF_DATA_DIRECTORY: ./data/backseries/VF
+NVF_DATA_DIRECTORY: ./data/backseries/NVF
+WEIGHT_VARIABLES:
+    VF_INDIVIDUAL: "c11weighti"

@@ -1,0 +1,57 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Both parts of the table;
+#         (b) just Part 1 of the table - "Respondent was/was-not emotionally affected"; and
+#         (c) just Part 2 of the Table - "Type of emotional response experienced".
+
+ALL_PARTS:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["Bicycle theft", [64]]
+    TITLE_OF_TABLE: "Table 4: Emotional impact of incidents of bicycle theft"
+    TITLES_OF_SUBTABLES:
+        - "Table 4: Emotional impact of incidents of bicycle theft"
+    SUBTITLES:
+        - "England and Wales"
+        - "Household incidents, percentages"
+    FOOTNOTES:
+        - "Figures here are based on incidents in which the victim reported that they were emotionally affected by the incident."
+        - "Figures may not sum to 100 as more than one response is possible."
+        -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_ONE:
+    NAME: "Was the respondent emotionally affected?"
+    ROW_LABELS:
+        - "Respondent was emotionally affected"
+        - "Respondent was not emotionally affected"
+        - "Unweighted base - number of incidents"
+PART_TWO:
+    NAME: "Extent of impact"
+    ROW_LABELS:
+        - "Very much"
+        - "Quite a lot"
+        - "Just a little"
+        - "Unweighted base - number of incidents"
+PART_THREE:
+    NAME: "Type of emotional response experienced$$Note_1$$$$Note_2$$"
+    ROW_LABELS:
+        - [anger, "Anger"]
+        - [shock, "Shock"]
+        - [fear, "Fear"]
+        - [sleeping, "Difficulty sleeping"]
+        - [crying, "Crying/tears"]
+        - [depress, "Depression"]
+        - [anxiety, "Anxiety or panic attacks"]
+        - [confid, "Loss of confidence or feeling vulnerable"]
+        - [annoy, "Annoyance"]
+        - [othemot, "Other"]
+        - [NULL, "Unweighted base - number of incidents"]

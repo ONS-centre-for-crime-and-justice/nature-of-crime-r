@@ -1,0 +1,42 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Three parts of the table;
+#         (b) just Part 1 of the Table - "Rated seriousness of incidents"; and
+#         (c) just Part 2 of the Table - "Whether incident perceived as a crime"; and
+
+BOTH_PARTS_OF_THE_TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["Bicycle theft", [64]]
+    TITLE_OF_TABLE: "Table 5: Perceived seriousness of incidents of bicycle theft"
+    TITLES_OF_SUBTABLES: "Table 5: Perceived seriousness of incidents of bicycle theft"
+    SUBTITLES:
+        - "England and Wales"
+        - "Household incidents, percentages"
+    FOOTNOTES:
+        - "1-6 represents the least serious assessment and 14-20 represents the most serious."
+        -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_ONE:
+    NAME: "Rated seriousness of crime$$Note_1$$"
+    ROW_LABELS:
+        - "1-6"
+        - "7-13"
+        - "14-20"
+        - "Mean rating"
+        - "Unweighted base - number of incidents"
+PART_TWO:
+    ROW_LABELS:
+        - "It was a crime"
+        - "It was wrong, but not a crime"
+        - "It was just something that happens"
+        - "Unweighted base - number of incidents"

@@ -1,0 +1,66 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Both parts of the table;
+#         (b) just Part 1 of the table - "Time of the week"; and
+#         (c) just Part 2 of the Table - "Time of day".
+
+BOTH_PARTS_OF_THE_TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["All vehicle-related theft", [60,61,62,63,71,72]]
+        - ["Theft of vehicle", [60,62]]
+        - ["Theft from vehicle", [61,63]]
+        - ["Attempted theft of and from vehicle", [71,72]]
+    TITLE_OF_TABLE: "Table 1: Timing of when incidents of vehicle-related theft occurred"
+    TITLES_OF_SUBTABLES:
+        - "Table 1a: Timing of when incidents of all vehicle-related theft occurred"
+        - "Table 1b: Timing of when incidents of theft of vehicle occurred"
+        - "Table 1c: Timing of when incidents of theft from vehicle occurred"
+        - "Table 1d: Timing of when incidents of attempted theft of and from vehicle occurred"
+    SUBTITLES:
+        - "England and Wales"
+        - "Household incidents, percentages"
+    FOOTNOTES:
+        - "Weekend is from Friday 6pm to Monday 6am."
+        - "Morning is from 6am to noon; afternoon is from noon to 6pm."
+        - "Evening is from 6pm to midnight; night is midnight to 6am."
+        - "Early evening is from 6pm to 10pm."
+        - "Late evening is from 10pm to midnight."
+        -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_ONE:
+    NAME: "Time of the week"
+    ROW_LABELS:
+        - "During the week"
+        - "At the weekend$$Note_1$$"
+        - "Unweighted base - number of incidents"
+PART_TWO:
+    NAME: "Time of day"
+    ROW_LABELS:
+        - "Morning/Afternoon$$Note_2$$"
+        - "Morning"
+        - "Afternoon"
+        - "Morning/afternoon (unsure which)"
+        - "Evening/night$$Note_3$$"
+        - "Evening"
+        - "Early evening$$Note_4$$"
+        - "Late evening$$Note_5$$"
+        - "Night"
+        - "Evening/night (unsure which)"
+        - "Unweighted base - number of incidents"
+PART_THREE:
+    NAME: "Daylight or dark"
+    ROW_LABELS:
+        - "Daylight"
+        - "Dark"
+        - "Dawn/Dusk"
+        - "Unweighted base - number of incidents"

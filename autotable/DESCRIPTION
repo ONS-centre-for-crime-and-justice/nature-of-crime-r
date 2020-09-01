@@ -1,0 +1,27 @@
+Package: autotable
+Title: Produce British Crime Survey theme tables
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given = "Joshua",
+           family = "Halls",
+           role = c("aut","cre"),
+           email = "joshua.halls@ons.gov.uk"),
+    person(given = "Martin",
+           family = "Ralphs",
+           role = "aut",
+           email = "martin.ralphs@ons.gov.uk"))
+Author: Joshua Halls [aut, cre],
+        Martin Ralphs [aut]
+Description: A package to automatically generate theme tables from the British Crime Survey, given input CSV files.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    yaml,
+    dplyr,
+    openxlsx,
+    futile.logger,
+    data.table
+Suggests: 
+    testthat
+RoxygenNote: 7.1.0

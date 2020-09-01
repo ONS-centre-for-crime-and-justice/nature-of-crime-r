@@ -1,0 +1,40 @@
+# In this YAML file, you can configure things that affect:
+#         The whole table;
+
+TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["Robbery", [41,42]]
+    TITLE_OF_TABLE: "Table 2: Where incidents of robbery occurred"
+    TITLES_OF_SUBTABLES: "Table 2: Where incidents of robbery occurred$$Note_1$$$$Note_2$$"
+    SUBTITLES:
+        - "England and Wales"
+        - "Personal incidents, percentages"
+    FOOTNOTES:
+        - "Due to changes in the year ending March 2013 questionnaire and year ending March 2018 questionnaire, data cannot be compared to earlier years. As a result, no significance testing is available for the year ending March 2020 compared with the year ending March 2010."
+        - "Includes attempted robbery."
+        - "Includes home premises, whether inside/outside; and garage/shed, home car park or nearby street to home."
+        - "Includes work premises, whether inside/outside; and work garage/car parks."
+        - "Includes streets near work/college/sports ground/public entertainment/train or tube stations etc., subway, park/open spaces, waste grounds, and street markets."
+        - "Includes pub/club premises, whether inside.outside; and nearby street/car parks."
+        - "'Other location' includes car parks, inside or in the grounds of a shop/supermarket, a school/college/university, a friends home, a place of entertainment, sports centre and somewhere else."
+        - master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+    ROW_LABELS:
+        - "Around the home$$Note_3$$"
+        - "Around work$$Note_4$$"
+        - "Street$$Note_5$$"
+        - "Pub or club$$Note_6$$"
+        - "Transport"
+        - "Other location$$Note_7$$"
+        - "Unweighted base - number of incidents"

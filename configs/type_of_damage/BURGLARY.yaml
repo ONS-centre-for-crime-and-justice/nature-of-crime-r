@@ -1,0 +1,90 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Both parts of the table;
+#         (b) just Part 1 of the table - "Some form of damage caused"; and
+#         (c) just Part 2 of the Table - "Type of damage".
+
+BOTH_PARTS_OF_THE_TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["All domestic burglary in a dwelling", [51,52,53]]
+        - ["Domestic burglary in a dwelling with entry", [51,52]]
+        - ["Attempted domestic burglary in a dwelling", [53]]
+        - ["All domestic burglary in a non-connected building to a dwelling", [50,57,58]]
+        - ["Domestic burglary in a non-connected building to a dwelling with entry", [57,58]]
+        - ["Attempted domestic burglary in a non-connected building to a dwelling", [50]]
+    TITLE_OF_TABLE: "Table 4: Type of damage caused in incidents of domestic burglary"
+    TITLES_OF_SUBTABLES:
+        - "Table 4a: Type of damage caused in incidents of domestic burglary in a dwelling$$Note_1$$"
+        - "Table 4b: Type of damage caused in incidents of domestic burglary in a dwelling with entry$$Note_1$$"
+        - "Table 4c: Type of damage caused in incidents of attempted domestic burglary in a dwelling$$Note_1$$"
+        - "Table 4d: Type of damage caused in incidents of domestic burglary in a non-connected building to a dwelling$$Note_1$$$$Note_2$$"
+        - "Table 4e: Type of damage caused in incidents of domestic burglary in a non-connected building to a dwelling with entry$$Note_1$$$$Note_2$$"
+        - "Table 4f: Type of damage caused in incidents of attempted domestic burglary in a non-connected building to a dwelling$$Note_1$$$$Note_2$$$$Note_3$$"
+    SUBTITLES:
+        - "England and Wales"
+        - "Household incidents, percentages"
+    FOOTNOTES:
+        - "Excludes damage caused to garages, sheds and outbuildings."
+        - "For survey years ending March 2017, March 2019 and March 2020, estimates based on fewer than 50 respondents should be interpreted with caution. This is indicated by a '†'."
+        - "Type of damage not presented due to small unweighted bases."
+        - "Percentages are based on burglaries in which some form of damage was caused."
+        - "Figures may not sum to 100 as more than one response possible."
+        - "'Other' includes accidental fire damage. Cases of deliberate damage by fire occurring in combination with burglary would be counted as arson rather than burglary."
+        - master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_ONE:
+    NAME: "Some form of damage caused"
+    OFFENCE_CODES:
+        - ["All domestic burglary in a dwelling", [51,52,53]]
+        - ["Domestic burglary in a dwelling with entry", [51,52]]
+        - ["Attempted domestic burglary in a dwelling", [53]]
+        - ["All domestic burglary in a non-connected building to a dwelling", [50,57,58]]
+        - ["Domestic burglary in a non-connected building to a dwelling with entry", [57,58]]
+        - ["Attempted domestic burglary in a non-connected building to a dwelling", [50]]
+    ROW_LABELS: 
+        - [anydam, "Some form of damage caused"]
+        - [NULL, "Unweighted base - number of incidents"]
+PART_TWO:
+    NAME: "Type of damage$$Note_3$$$$Note_4$$"
+    TITLE_OF_TABLE: "Table X: Type of damage caused in incidents of burglary"
+    OFFENCE_CODES: 
+        - ["All domestic burglary in a dwelling", [51,52,53]]
+        - ["Domestic burglary in a dwelling with entry", [51,52]]
+        - ["Attempted domestic burglary in a dwelling", [53]]
+    ROW_LABELS:
+        - [damhomb, "Broke/damage to an outside door"]
+        - [damhomc, "Damage to lock"]
+        - [damhoma, "Broke a window"]
+        - [damhomf, "Damaged furniture/furnishings"]
+        - [damhome, "Soiling"]
+        - [damhomd, "Graffiti"]
+        - [damhomg, "Fire damage"]
+        - [damhomh, "Other$$Note_6$$"]
+        - [NULL, "Unweighted base - number of incidents"]
+PART_THREE:
+    NAME: "Type of damage$$Note_4$$$$Note_5$$"
+    TITLE_OF_TABLE: "Table X: Type of damage caused in incidents of burglary"
+    OFFENCE_CODES: 
+        - ["All domestic burglary in a dwelling", [51,52,53]]
+        - ["Domestic burglary in a dwelling with entry", [51,52]]
+        - ["Attempted domestic burglary in a dwelling", [53]]
+    ROW_LABELS:
+        - [damhomb, "Broke/damage to an outside door"]
+        - [damhoma, "Damage to lock"]
+        - [damhomc, "Broke a window"]
+        - [damhomf, "Damaged furniture/furnishings"]
+        - [damhome, "Soiling"]
+        - [damhomd, "Graffiti"]
+        - [damhomg, "Fire damage"]
+        - [damhomh, "Other$$Note_5$$"]
+        - [NULL, "Unweighted base - number of incidents"]

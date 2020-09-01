@@ -1,0 +1,59 @@
+# In this YAML file, you can configure things that affect:
+#         The whole table;
+
+TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["All violence$$Note_2$$", [11,12,13,21,32,33]]
+        - ["Violence with injury$$Note_3$$", [11,12,13,21,32,33]]
+        - ["Wounding", [11,12,13,21,32,33]]
+        - ["Assault with minor injury", [11,12,13,21,32,33]]
+        - ["Violence without injury", [11,12,13,21,32,33]]
+        - ["Domestic violence$$Note_4$$", [11,12,13,21,32,33]]
+        - ["Violence by an acquaintance", [11,12,13,21,32,33]]
+        - ["Violence by a stranger", [11,12,13,21,32,33]]
+    TITLE_OF_TABLE: "Table 2: Where violent incidents occurred"
+    TITLES_OF_SUBTABLES: 
+        - "Table 2a: Where all violent incidents occurred$$Note_1$$$$Note_2$$"
+        - "Table 2b: Where incidents of violence with injury occurred$$Note_1$$$$Note_3$$"
+        - "Table 2c: Where incidents of wounding occurred$$Note_1$$"
+        - "Table 2d: Where incidents of assault with minor injury occurred$$Note_1$$"
+        - "Table 2e: Where incidents of violence without injury occurred$$Note_1$$"
+        - "Table 2f: Where incidents of domestic violence occurred$$Note_1$$$$Note_4$$"
+        - "Table 2g: Where incidents of acquaintance violence occurred$$Note_1$$$$Note_5$$"
+        - "Table 2h: Where incidents of stranger violence occurred$$Note_1$$$$Note_6$$"
+    SUBTITLES:
+        - "England and Wales"
+        - "Personal incidents, percentages"
+    FOOTNOTES:
+        - "Due to changes in the year ending March 2013 questionnaire and year ending March 2018 questionnaire, data cannot be compared to earlier years. As a result, no significance testing is available for the year ending March 2020 compared with the year ending March 2010."
+        - "All violence' includes violence with injury and violence without injury. See Section 5.1 of the User Guide for more information."
+        - "'Violence with injury' includes wounding and assault with minor injury."
+        - "Domestic violence comprises violence that involves partners, ex-partners, other relatives or household members. See Section 5.1 of the User Guide for more information."
+        - "Acquaintance violence comprises violence in which the victim knew one or more of the offenders, at least by sight but it excludes domestic violence. See Section 5.1 of the User Guide for more information."
+        - "Stranger violence comprises violence in which the victim did not have any information about the offender(s) or did not know and had never seen the offender(s) before. See Section 5.1 of the User Guide for more information."
+        - "Includes home premises, whether inside/outside; and garage/shed, home car park or nearby street to home."
+        - "Includes work premises, whether inside/outside; and work garage/car parks."
+        - "Includes streets near work/college/sports ground/public entertainment/train or tube stations etc., subway, park/open spaces, waste grounds, and street markets."
+        - "Includes pub/club premises, whether inside.outside; and nearby street/car parks."
+        - "'Other location' includes car parks, inside or in the grounds of a shop/supermarket, a school/college/university, a friends home, a place of entertainment, sports centre and somewhere else."
+        -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+    ROW_LABELS:
+        - "Around the home$$Note_7$$"
+        - "Around work$$Note_8$$"
+        - "Street$$Note_9$$"
+        - "Pub or club$$Note_10$$"
+        - "Transport"
+        - "Other location$$Note_11$$"
+        - "Unweighted base - number of incidents"

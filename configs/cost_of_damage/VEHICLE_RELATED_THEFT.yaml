@@ -1,0 +1,38 @@
+WEIGHT_VARIABLES:
+    - [2009, c11weighti]
+    - [2010, c11weighti]
+    - [2011, c11weighti]
+    - [2012, c11weighti]
+    - [2013, c11weighti]
+    - [2014, c11weighti]
+    - [2015, c11weighti]
+    - [2016, c11weighti]
+    - [2017, c11weighti]
+    - [2018, c11weighti]
+    - [2019, c11weighti]
+OFFENCE_CODES:
+    - ["Theft of and from vehicles", [60,61,62,63]]
+TITLE_OF_TABLE: "Table 5: Cost of damage in incidents of vehicle-related theft"
+TITLES_OF_SUBTABLES:
+    - "Table 5: Cost of damage in incidents of theft of and from vehicles"
+SUBTITLES:
+    - "England and Wales"
+    - "Household incidents, percentages"
+FOOTNOTES:
+    - "Respondents were asked to estimate the total cost of damage caused. The mean is affected by the small number of offences with high costs and the median is affected by the high number of offences with no cost, hence both are presented together."
+    - "Values include all respondents who said damage to property was caused, even if damage was valued at zero."
+    - "It is not possible to calculate statistical significance for the median cost."
+    -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+ROW_LABELS:
+    - "Under £50"
+    - "£50 to £99"
+    - "£100 to £499"
+    - "£500 to £999"
+    - "£1,000 to £4,999" 
+    - "£5,000 to £9,999"
+    - "£10,000 to £14,999"
+    - "£15,000 or more"
+    - "Mean cost$$Note_1$$"
+    - "Median cost$$Note_1$$$$Note_2$$$$Note_3$$"
+    - "Unweighted base - number of incidents"
+GROUPED_TOTAL_DAMAGE_VARIABLE: totdamx

@@ -1,0 +1,59 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Both parts of the table;
+#         (b) just Part 1 of the table - "Respondent was/was-not emotionally affected"; and
+#         (c) just Part 2 of the Table - "Type of emotional response experienced".
+
+BOTH_PARTS_OF_THE_TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["All vehicle-related theft", [60,61,62,63]]
+        - ["Theft of vehicle", [60,62]]
+        - ["Theft from vehicle", [61,63]]
+    TITLE_OF_TABLE: "Table 6: Items stolen in incidents of vehicle-related theft"
+    TITLES_OF_SUBTABLES:
+        - "Table 6a: Items stolen in incidents of all vehicle-related theft"
+        - "Table 6b: Items stolen in incidents of theft of a vehicle"
+        - "Table 6c: Items stolen in incidents of thefm from a vehicle"
+    SUBTITLES:
+        - "England and Wales"
+        - "Household incidents, percentages"
+    FOOTNOTES:
+        - "Figures may not sum to 100 as more than one response possible."
+        - "'Valuables' includes jewellery, handbag/briefcase/shopping bag, purses/wallets, cash, cheque books, credit cards, clothes and documents."
+        - "'Electrical equipment' includes satellite navigation systems, televisions, videos, MP3 players, DVD players and computer equipment."
+        - "Theft of bicycles only is not included in the category of theft from vehicles; hence bicycles stolen here are as a result of vehicle theft, e.g. being within a car when it is stolen. Theft of bicycles only can be found in the Nature of crime: bicycle theft tables."
+        -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_TWO:
+    NAME: "Items stolen$$Note_1$$"
+    ROW_LABELS:
+        - [valstol, "Valuables$$Note_2$$"]
+        - [electric, "Electrical equipment$$Note_3$$"]
+        - [hifi, "Car radio"]
+        - [cartele, "Mobile phone"]
+        - [tools, "Tools"]
+        - [bike, "Bicycle$$Note_4$$"]
+        - [camera, "Camera"]
+        - [cdtapedvd, "CDs/tapes/videos/DVDs"]
+        - [hhitems, "Various household items / gadgets"]
+        - [foodcigs, "Food/toiletries/cigarettes"]
+        - [Hkeys, "House keys"]
+        - [Ckeys, "Car keys"]
+        - [extfit, "Exterior fittings"]
+        - [tyres, "Wheels"]
+        - [othervp, "Other vehicle parts"]
+        - [fuel, "Fuel"]
+        - [garden, "Garden furniture"]
+        - [glasses, "Glasses/sunglasses/spectacles"]
+        - [otherst, "Other (non- vehicle parts)"]
+        - [NULL, "Unweighted base - number of incidents"]

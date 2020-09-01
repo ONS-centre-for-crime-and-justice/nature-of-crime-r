@@ -1,0 +1,50 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Both parts of the table;
+#         (b) just Part 1 of the table - "Whether a weapon was used"; and
+#         (c) just Part 2 of the Table - "What weapon was used".
+
+BOTH_PARTS_OF_THE_TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["Robbery", [41,42]]
+    TITLE_OF_TABLE: "Table 4: Use of weapons in incidents of robbery"
+    TITLES_OF_SUBTABLES:
+        - "Table 4: Use of weapons in incidents of robbery$$Note_1$$"
+    SUBTITLES:
+        - "England and Wales"
+        - "Personal incidents, percentages"
+    FOOTNOTES:
+        - "Includes attempted robbery."
+        - "The unweighted base given is for the question about whether a weapon was used. Base sizes for other questions will be similar."
+        - "Includes screwdrivers and other stabbing implements."
+        - "Includes sticks, clubs and other hitting implements."
+        - "Includes pistol, rifle, shotgun, airgun, air rifle, and any gun which could not be identified."
+        - "Includes axe/sword/cleaver, car/vans, dogs and other weapons."
+        - master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_ONE:
+    ROW_LABELS: 
+        - [weaponused,    "Weapon used"]
+        - [noweaponused,  "No weapon used"]
+        - [notknown,      "Not known (not able to say anything about offender/no contact)"]
+        - [NULL, "Unweighted bases - number of incidents$$Note_2$$"]
+PART_TWO:
+    NAME: "Type of weapon used"
+    ROW_LABELS:
+        - [knifestab1,  "Knife/ Stabbing implement$$Note_3$$"]
+        - [hit1,        "Hitting implement$$Note_4$$"]
+        - [glass1,      "Glass/bottle"]
+        - [gun1,        "Firearm$$Note_5$$"]
+        - [stones1,     "Stones"]
+        - [othweap1,    "Other$$Note_6$$" ]
+        - [NULL, "Unweighted base - number of incidents$$Note_2$$"]

@@ -1,0 +1,68 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Both parts of the table;
+#         (b) just Part 1 of the table - "Some form of damage caused"; and
+#         (c) just Part 2 of the Table - "Type of damage".
+
+BOTH_PARTS_OF_THE_TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["Criminal damage to a vehicle", [81,82]]
+        - ["Arson and other criminal damage", [80,83,84,85,86]]
+    TITLE_OF_TABLE: "Table X: Type of damage caused in incidents of criminal damage"
+    TITLES_OF_SUBTABLES:
+        - "Table 3a: Type of damage caused in incidents of criminal damage to a vehicle"
+        - "Table 3b: Type of damage caused in incidents of Arson and other criminal damage"
+    SUBTITLES:
+        - "England and Wales"
+        - "Household incidents, percentages$$Note_1$$"
+    FOOTNOTES:
+        - "Figures may not sum to 100 as more than one response possible"
+        - master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+        - "'Other' includes damage to a catalytic converter."
+PART_ONE:
+    NAME: "Arson and other criminal damage"
+    OFFENCE_CODES:
+        - ["Arson and other criminal damage", [80,83,84,85,86]]
+    ROW_LABELS:
+        - [homewind,  "House/flat window broken"]
+        - [homedoor,  "House/flat door or door lock damaged"]
+        - [homegraf,  "Graffiti on house/flat"]
+        - [homesoil,  "Soiling of house/flat"]
+        - [homeoth,   "Other damage to house/flat"]
+        - [wallgraf,  "Graffiti on wall/fence/other garden items"]
+        - [wallbrke,  "Broken wall/fence/other garden items"]
+        - [walloth,   "Other damage to wall/fence/other garden items"]
+        - [shedwind,  "Garage/shed window broken"]
+        - [sheddoor,  "Garage/shed door/door lock damaged"]
+        - [shedsoil,  "Soiling of garage/shed"]
+        - [shedgraf,  "Graffiti on garage/shed"]
+        - [shedoth,   "Other damage to garage/shed"]
+        - [hmdmoth,   "Other damage to the home"]
+        - [NULL, "Unweighted base - number of incidents"]
+PART_TWO:
+    NAME: "Criminal damage to a vehicle"
+    OFFENCE_CODES:
+        - ["Criminal damage to a vehicle", [81,82]]
+    ROW_LABELS:
+        - [damveh_windscreen, "Broken window (side)"]
+        - [damveh_window, "Smashed windscreen"] 
+        - [damveh_lock, "Damage to steering/door lock"]
+        - [damveh_bodywork, "Damage to bodywork"]
+        - [damveh_slash, "Slashed tyres"]
+        - [damveh_deflate, "Let down tyres"]
+        - [damveh_wingmirror, "Damage to wing mirrors"]
+        - [damveh_scratch, "Scratched bodywork"]
+        - [damveh_fire, "Fire damage"]
+        - [damveh_other, "Other$$Note_3$$"]
+        - [NULL, "Unweighted base - number of incidents"]

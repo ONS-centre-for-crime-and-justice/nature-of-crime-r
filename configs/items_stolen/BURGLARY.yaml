@@ -1,0 +1,61 @@
+BOTH_PARTS_OF_THE_TABLE:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+        - ["Domestic burglary in a dwelling with entry", [51,52]]
+        - ["Domestic burglary in a non-connected building to a dwelling with entry", [57,58]]
+    TITLE_OF_TABLE: "Table 6: Items stolen in incidents of domestic burglary"
+    TITLES_OF_SUBTABLES:
+        - "Table 6a: Items stolen in incidents of domestic burglary in a dwelling with entry"
+        - "Table 6b: Items stolen in incidents of domestic burglary in a non-connected building to a dwelling with entry"
+    SUBTITLES:
+        - "England and Wales"
+        - "Household incidents, percentages"
+    FOOTNOTES:
+        - "Percentage is based on burglaries where entry was successful; that is, about three in five domestic burglaries in a dwelling."
+        - "Percentage is based on burglaries in which one or more items were stolen."
+        - "Figures may not sum to 100 as more than one response possible."
+        - "Separate categories for jewellery and watches were introduced in the year ending March 2015."
+        - "'Electrical goods/cameras' includes televisions, videos, stereos, cameras, MP3 players and DVD players."
+        -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_ONE:
+    ROW_LABELS:
+        - "Some items stolen$$Note_1$$"
+        - "Unweighted base - number of incidents"
+PART_TWO:
+    NAME: "Items stolen$$Note_2$$$$Note_3$$"
+    ROW_LABELS:
+        - [whast_b1, "Vehicle/vehicle parts"]
+        - [whast_b2, "Purse/wallet/money/cards"]
+        - [whast_b3, "Mobile"]
+        - [whast_b4, "Jewellery/watches"]
+        - [whast_b5, "Clothes"]
+        - [whast_b6, "Documents"]
+        - [whast_b7, "Electrical good/cameras$$Note_5$$"]
+        - [whast_b8, "Computer/computer equipment"]
+        - [whast_b9, "CDs/tapes/videos/DVDs"]
+        - [whast_b10, "House keys"]
+        - [whast_b11, "Car keys"]
+        - [whast_b12, "Tools/work materials"]
+        - [whast_b13, "Bicycle/bicycle parts"]
+        - [whast_b14, "Garden furniture"]
+        - [whast_b15, "Wheelie bin/dustbin"]
+        - [whast_b16, "Children's toys/baby items"]
+        - [whast_b17, "Sports equipment"]
+        - [whast_b18, "Other stolen items"]
+        - [whast_b19, "Household items/furniture"]
+        - [whast_b20, "Food/toiletries/cigarettes"]
+        - [whast_b21, "Handbag/briefcase/shopping bag"]
+        - [whast_b22, "Jewellery$$Note_4$$"]
+        - [whast_b23, "Watches$$Note_4$$"]
+        - [NULL, "Unweighted base - number of incidents"]

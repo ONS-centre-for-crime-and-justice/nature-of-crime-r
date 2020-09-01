@@ -1,0 +1,73 @@
+# In this YAML file, you can configure things that affect:
+#         (a) All parts of the table;
+#         (b) just Part 1 of the table - "Able to say something about offender(s);
+#         (c) just Part 2 of the table - "Number of offenders".
+#         (d) just Part 3 of the table - "Sex of offender(s)"; and
+#         (e) just Part 4 of the table - "Age of offender(s)".
+#         (f) just Part 5 of the table - "Relationship to victim".
+
+ALL_PARTS:
+    WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+    OFFENCE_CODES:
+          - ["Robbery", [41,42]]
+    TITLE_OF_TABLE: "Table XX: Offender characteristics in robbery incidents, year ending March 2008 to year ending March 2018 CSEW"
+    TITLES_OF_SUBTABLES:
+        - "Table 8: Offender characteristics in incidents of robbery$$Note_1$$"
+    SUBTITLES:
+        - "England and Wales"
+        - "Personal incidents, percentages"
+    FOOTNOTES:
+        - "Includes attempted robbery."
+        - "Figures may not sum to 100 as more than one offender could be involved."
+        - "Figures here are based on incidents in which the victim could say something about the offender(s)."
+        - "The offender-victim relationship is classified as: 'strangers' if the victim did not have any information about the offender(s), or did not know and had never seen the offender(s) before; 'known by sight or to speak to' if at least one offender falls into either category; and 'known well' if at least one offender falls into this category (for multiple offenders this takes priority over any less well-known offenders)."
+        - "All respondents were asked about their relationship to the offender(s) - this includes detailed questions of victims who experienced three or less offences and brief questions to those who experienced more than three but less than six offences in the last year."
+        -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+PART_ONE:
+    NAME: "Able to say something about offender(s)"
+    ROW_LABELS:
+        - "Yes"
+        - "Unweighted base - number of incidents"
+PART_TWO:
+    NAME: "Number of offenders"
+    ROW_LABELS:
+        - "One"
+        - "Two"
+        - "Three"
+        - "Four or more"
+        - "Unweighted base - number of incidents$$Note_3$$"
+PART_THREE:
+    NAME: "Sex of offender(s)"
+    ROW_LABELS:
+        - "Male(s)"
+        - "Female(s)"
+        - "Both"
+        - "Unweighted base - number of incidents$$Note_3$$"
+PART_FOUR:
+    NAME: "Age of offender(s)$$Note_2$$"
+    ROW_LABELS:
+        - "Aged under 16"
+        - "Aged under 10"
+        - "Aged 10 to 15"
+        - "Aged 16 to 24"
+        - "Aged 25 to 39"
+        - "Aged 40 or older"
+        - "Unweighted base - number of incidents$$Note_3$$"
+PART_FIVE:
+    NAME: "Relationship to victim$$Note_4$$"
+    ROW_LABELS:
+        - "Stranger"
+        - "Known by sight or to speak to"
+        - "Known well"
+        - "Unweighted base - number of incidents$$Note_3$$$$Note_5$$"

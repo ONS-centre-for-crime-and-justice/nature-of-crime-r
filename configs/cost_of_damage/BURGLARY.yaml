@@ -1,0 +1,49 @@
+WEIGHT_VARIABLES:
+    - [2009, c11weighti]
+    - [2010, c11weighti]
+    - [2011, c11weighti]
+    - [2012, c11weighti]
+    - [2013, c11weighti]
+    - [2014, c11weighti]
+    - [2015, c11weighti]
+    - [2016, c11weighti]
+    - [2017, c11weighti]
+    - [2018, c11weighti]
+    - [2019, c11weighti]
+OFFENCE_CODES:
+    - ["All domestic burglary in a dwelling", [51,52,53]]
+    - ["Domestic burglary in a dwelling with entry", [51,52]]
+    - ["Attempted domestic burglary in a dwelling", [53]]
+    - ["All domestic burglary in a non-connected building to a dwelling", [50,57,58]]
+    - ["Domestic burglary in a non-connected building to a dwelling with entry", [57,58]]
+    - ["Attempted domestic burglary in a non-connected building to a dwelling", [50]]
+TITLE_OF_TABLE: "Table 5: Cost of damage in incidents of burglary"
+TITLES_OF_SUBTABLES:
+    - "Table 5a: Cost of damage in incidents of all domestic burglary in a dwelling"
+    - "Table 5b: Cost of damage in incidents of domestic burglary in a dwelling with entry"
+    - "Table 5c: Cost of damage in incidents of attempted domestic burglary in a dwelling"
+    - "Table 5d: Cost of damage in incidents of all domestic burglary in a non-connected building to a dwelling"
+    - "Table 5e: Cost of damage in incidents of domestic burglary in a non-connected building to a dwelling with entry"
+    - "Table 5f: Cost of damage in incidents of attempted domestic burglary in a non-connected building to a dwelling"
+SUBTITLES:
+    - "England and Wales"
+    - "Household incidents, percentages"
+FOOTNOTES:
+    - "No cost includes incidents where respondents said there was no damage to property."
+    - "Respondents were asked to estimate the total cost of the damage in burglary. The mean is affected by the small number of offences with high costs and the median is affected by the high number of offences with no cost, hence both are presented together."
+    - "Values include all respondents who said damage to property was caused, even if damage was valued at zero."
+    - "It is not possible to calculate statistical significance for the median cost."
+    -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+ROW_LABELS:
+    - "No cost$$Note_1$$"
+    - "£1 to £49"
+    - "£50 to £99"
+    - "£100 to £249"
+    - "£250 to £499" 
+    - "£500 to £999"
+    - "£1000 to £4999"
+    - "£5000 or more"
+    - "Mean cost$$Note_2$$"
+    - "Median cost$$Note_2$$$$Note_3$$$$Note_4$$"
+    - "Unweighted base - number of incidents"
+GROUPED_TOTAL_DAMAGE_VARIABLE: totdamgp3

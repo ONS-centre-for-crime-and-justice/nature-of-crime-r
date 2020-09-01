@@ -1,0 +1,38 @@
+FOOTNOTES:
+    - "Includes cars, vans, motorbikes and mopeds."
+    -  master_config$SIGNIFICANCE_TESTING$FOOTNOTE
+METADATA:
+    SCOPE:
+        - master_config$METADATA$SCOPE
+    SOURCE:
+        - master_config$METADATA$SOURCE
+    SUBTITLES:
+        - master_config$METADATA$GEOGRAPHY
+        - master_config$METADATA$HOUSEHOLD_UNITS
+OFFENCE_CODES:
+    - ["Theft of vehicles", master_config$OFFENCE_CODES$VEHICLE_RELATED_THEFT$THEFT_OF_VEHICLES]
+YEARS_AND_WEIGHT_VARIABLES:
+    - [master_config$YEARS$YEAR_ONE,    master_config$WEIGHT_VARIABLES$VF_INDIVIDUAL]
+    - [master_config$YEARS$YEAR_TWO,    master_config$WEIGHT_VARIABLES$VF_INDIVIDUAL]
+    - [master_config$YEARS$YEAR_THREE,  master_config$WEIGHT_VARIABLES$VF_INDIVIDUAL]
+    - [master_config$YEARS$YEAR_FOUR,   master_config$WEIGHT_VARIABLES$VF_INDIVIDUAL]
+    - [master_config$YEARS$YEAR_FIVE,   master_config$WEIGHT_VARIABLES$VF_INDIVIDUAL]
+    - [master_config$YEARS$YEAR_SIX,    master_config$WEIGHT_VARIABLES$VF_INDIVIDUAL]
+    - [master_config$YEARS$YEAR_SEVEN,  master_config$WEIGHT_VARIABLES$VF_INDIVIDUAL]
+    - [master_config$YEARS$YEAR_EIGHT,  master_config$WEIGHT_VARIABLES$VF_INDIVIDUAL]
+    - [master_config$YEARS$YEAR_NINE,   master_config$WEIGHT_VARIABLES$VF_INDIVIDUAL]
+    - [master_config$YEARS$YEAR_TEN,    master_config$WEIGHT_VARIABLES$VF_INDIVIDUAL]
+    - [master_config$YEARS$YEAR_ELEVEN, master_config$WEIGHT_VARIABLES$VF_INDIVIDUAL]
+TITLES_OF_SUBTABLES:
+    - "Table 10: Age of stolen vehicles$$Note_1$$"
+ROWS:
+    - ["Less than one year old", vehage, 1]
+    - ["More than one year, but less than five years old", vehage, 2]
+    - ["More than five years but less than ten years old", vehage , 3]
+    - ["More than ten years old", vehage, 4]
+    - ["Unweighted base - number of incidents", NULL, NULL]
+SIGNIFICANCE_COLUMN_LABELS:
+    ONE_YEAR_TEST: master_config$SIGNIFICANCE_TESTING$COLUMN_LABELS$`1_YEAR_TEST`
+    TEN_YEAR_TEST: master_config$SIGNIFICANCE_TESTING$COLUMN_LABELS$`10_YEAR_TEST`
+VF_DATA_DIRECTORY:
+    - master_config$DATA_DIRECTORIES$VF

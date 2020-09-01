@@ -1,0 +1,38 @@
+# In this YAML file, you can configure things that affect:
+#         (a) Both parts of the table;
+#         (b) just Part 1 of the table - "Respondent was/was-not emotionally affected"; and
+#         (c) just Part 2 of the Table - "Type of emotional response experienced".
+WEIGHT_VARIABLES:
+        - [2009, c11weighti]
+        - [2010, c11weighti]
+        - [2011, c11weighti]
+        - [2012, c11weighti]
+        - [2013, c11weighti]
+        - [2014, c11weighti]
+        - [2015, c11weighti]
+        - [2016, c11weighti]
+        - [2017, c11weighti]
+        - [2018, c11weighti]
+        - [2019, c11weighti]
+OFFENCE_CODES:
+        - ["Theft of vehicle", [60,62]]
+        - ["Theft from vehicle", [61,63]]
+TITLE_OF_TABLE: "Table XX: cost of stolen items in vehicle related theft incidents"
+SUBTITLES:
+        - "England and Wales"
+        - "Household incidents"
+FOOTNOTES:
+        - "Figures here are based on incidents in which the victim reported that they were emotionally affected by the incident."
+        - "Figures may not sum to 100 as more than one response is possible."
+ROW_LABELS:
+        - "no cost"
+        - "£1-£19"
+        - "£20-£49"
+        - "£50-£99"
+        - "£100-£199"
+        - "£200-£499"
+        - "£500-£999"
+        - "£1000 or more"
+        - "Mean cost"
+        - "Median cost"
+        - "unweighted base - number of incidents"
